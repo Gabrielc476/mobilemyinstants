@@ -17,9 +17,11 @@ class MainActivity : AppCompatActivity() {
         val botao4 : Button = findViewById(R.id.botao4)
         val botao5 : Button = findViewById(R.id.botao5)
         val botao6 : Button = findViewById(R.id.botao6)
-
+        val playbutton : Button = findViewById(R.id.play_button)
+        val pausebutton : Button = findViewById(R.id.pause_button)
+        val stopbutton : Button = findViewById(R.id.stop_button)
         val botoes : Botoes = Botoes()
-        botoes.setListeners(botao1,botao2,botao3,botao4,botao5,botao6,mp,this)
+        botoes.setListeners(botao1,botao2,botao3,botao4,botao5,botao6,playbutton,pausebutton,stopbutton,mp,this)
 
 
     }

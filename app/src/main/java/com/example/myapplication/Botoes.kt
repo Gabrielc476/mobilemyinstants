@@ -12,8 +12,12 @@ class Botoes {
         botao4: Button,
         botao5: Button,
         botao6: Button,
+        playbutton : Button,
+        pausebutton : Button,
+        stopbutton: Button,
         mediaplayer : MediaPlayer,
-        context:Context
+        context:Context,
+
         ){
         var mp = mediaplayer
         botao1.setOnClickListener{
@@ -93,6 +97,16 @@ class Botoes {
                 mp = MediaPlayer.create(context, R.raw.ricardo6)
                 mp.start()
             }
+        }
+        playbutton.setOnClickListener {
+            mp.start()
+        }
+        pausebutton.setOnClickListener {
+            mp.pause()
+        }
+        stopbutton.setOnClickListener {
+            mp.stop()
+            mp.seekTo(0)
         }
     }
 
